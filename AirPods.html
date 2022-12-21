@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLE PRODUCT</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-image : url(./images/에어팟\ 프로.jpg);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+nav{
+    z-index: 1000;
+}
+.navbar{
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    background-color: #323232;
+    position: absolute;
+}
+.navbar_menu{
+    font-size: 18px;
+    color: white;
+    display: flex;
+    list-style: none;
+}
+.navbar_menu li {
+    padding: 8px 12px;
+}
+.outer {
+    position: relative;
+    background: url(./images/에어팟\ 프로.jpg);
+    width: 500px; 
+    height: 309px; 
+}
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 0.5em;
+    width: 400px;
+    font-weight: bold;
+    color: #fff;
+}
+.topright {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    width: 120px;
+    padding: 4px;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar_menu">
+            <li><a class="material-icons" href="./index.html" style="margin-left: 10vw;">apple</a></li>
+            <li><a href="./Mac.html" style="margin-left: 10vw; margin-top: 20px;">Mac</a></li>
+            <li><a href="./iPad.html" style="margin-left: 10vw;">iPad</a></li>
+            <li><a href="./iPhone.html" style="margin-left: 10vw;">iPhone</a></li>
+            <li><a href="./Watch.html" style="margin-left: 10vw;">Watch</a></li>
+            <li><a href="./AirPods.html" style="margin-left: 10vw;">AirPods</a></li>
+        </ul>
+    </nav>
+    <div class="outer">
+        <div class="bottomleft">
+        <p>(이미지의 왼쪽 하단에 표시됨)</p>
+        </div>
+        <p class="topright">(이미지의 오른쪽 상단에 표시됨)</p>
+        </div>
+</body>
+</html>
