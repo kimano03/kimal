@@ -1,49 +1,184 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APPLE PRODUCT</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <style>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-image : url(./images/에어팟\ 프로.jpg);
-    width: 100vh;
-    height: 100vh;
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-nav{
-    z-index: 1000;
-}
-.navbar{
-    width: 100%;
-    justify-content: end;
-    align-items: center;
-    background-color: #323232;
-    position: absolute;
-}
-.navbar_menu{
-    font-size: 18px;
-    color: white;
-    display: flex;
-    list-style: none;
-}
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap');
+		.gallerylist {
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+		}
+		
+		* {
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
 
-.navbar_menu li {
-    padding: 8px 12px;
-}
-    </style>
+		a {
+	  	  text-decoration: none;
+	 	   color: white;
+		}
+		nav{
+		    z-index: 1000;
+		}
+		.navbar{
+		    width: 100%;
+		    justify-content: end;
+		    align-items: center;
+		    background-color: #323232;
+		    position: absolute;
+		}
+		.navbar_menu{
+		    font-size: 18px;
+		    color: white;
+		    display: flex;
+		    list-style: none;
+		}
+
+		.navbar_menu li {
+    		padding: 8px 12px;
+		}
+
+		.navnull{
+			height: 45px;
+		}
+		.gallerylist {
+			max: width 90vm;;
+			width:100%;
+			margin:0 auto;
+		}
+		
+		.gallerylist > ul {
+			font-size:0;
+		}
+		
+		.gallerylist > ul > li {
+			display:inline-block;
+			vertical-align:top;
+			width:25%;
+		}
+		
+		.gallerylist > ul > li > a {
+			display:block;
+			width:auto;
+			text-decoration: none;
+			margin:5px;
+		}
+		
+		.gallerylist > ul > li > a .screen {
+			position:relative;
+			overflow:hidden;
+		}
+		
+		.gallerylist > ul > li > a .screen .top {
+			position:absolute;
+			bottom:150%;
+			left:30px;
+			z-index:2;
+			color:#fff;
+			font-size:26px;
+			font-weight:900;
+			transition:all .35s;
+		}
+		
+		.gallerylist > ul > li > a .screen .bottom {
+			position:absolute;
+			top:150%;
+			left:30px;
+			z-index:2;
+			color:#fff;
+			font-size:12px;
+			transition:all .35s;
+		}
+		
+		.gallerylist > ul > li > a .screen img {
+			width:100%;
+		}
+		
+		.gallerylist > ul > li > a h3 {
+			font-size:14px;
+			text-align:center;
+			padding:20px;
+			color:#666;
+		}
+		
+		.gallerylist > ul > li > a .screen::after {
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background:rgba(0,0,0,.5);
+			z-index:1;
+			opacity:0;
+			transition:all .35s;
+		}
+		
+		.gallerylist > ul > li > a:hover .top {
+			bottom:52%;
+		}
+		
+		.gallerylist > ul > li > a:hover .bottom {
+			top:52%;
+		}
+		
+		.gallerylist > ul > li > a:hover .screen::after {
+			opacity:1;
+		}
+		.wh1{
+			margin-top: 5vh;
+			margin-left: 10vw;
+			align-items: center;
+			color: black;
+			font-weight: bold;
+			font-size: 50px;
+			font-family: 'Noto Sans SC', sans-serif;
+		}
+		.wh3{
+			margin-left: 10vw;
+			align-items: center;
+			color: black;
+			font-weight: bold;
+			font-size: 30px;
+			line-height:85px;
+			font-family: 'Noto Sans SC', sans-serif;
+		}
+		.gun{
+			border: solid white 3px;
+			width: 100vw;
+			height: 100vh;
+			text-align : center;
+			font-family: 'Noto Sans SC', sans-serif;
+		}
+		.gunimg{
+			margin-top: 5vh;
+			width: 90vw;
+			height: 50vh;
+			vertical-align : bottom;
+		}
+		.gunh{
+			margin-top: 58vh;
+			font-size: 50px;
+			font-family: 'Noto Sans SC', sans-serif;
+		}
+		.gunh2{
+			font-size: 35px;
+			line-height:85px;
+		}
+		
+		</style>
 </head>
 <body>
-    <nav class="navbar">
+	<nav class="navbar">
         <ul class="navbar_menu">
             <li><a class="material-icons" href="./index.html" style="margin-left: 10vw;">apple</a></li>
             <li><a href="./Mac.html" style="margin-left: 10vw; margin-top: 20px;">Mac</a></li>
@@ -53,5 +188,75 @@ nav{
             <li><a href="./AirPods.html" style="margin-left: 10vw;">AirPods</a></li>
         </ul>
     </nav>
+	<div class="navnull"></div>
+	<div class="ww">
+		<h1 class="wh1">
+			Apple Watch 쇼핑하기
+		</h1>
+		<h3 class="wh3">
+			당신의 선택은?
+		</h3>
+	</div>
+	<div class="gallerylist">
+		<ul>
+			<li>
+				<a href="">
+					<div class="screen">
+						<div class="top">Apple Watch<br>Ultra</div>
+						<div class="bottom">위대한 모험의 동반자.</div>
+						<img src="./img/울트라.png">
+					</div>
+					<div>
+						<h3>Apple Watch Ultra</h3>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="screen">
+						<div class="top">Apple Watch<br>Series 8</div>
+						<div class="bottom">가장 앞선 건강 기능들.</div>
+						<img src="./img/에잇.jfif">
+					</div>
+					<div>
+						<h3>Apple Watch Series 8</h3>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="screen">
+						<div class="top">Apple Watch<br>SE</div>
+						<div class="bottom">뛰어난 성능, 부담 없는 가격</div>
+						<img src="./img/에스이.png">
+					</div>
+					<div>
+						<h3>Apple Watch SE</h3>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="screen">
+						<div class="top">Apple Watch<br>Hermès</div>
+						<div class="bottom">패셔너블한 선택</div>
+						<img src="./img/에르메스.jfif">
+					</div>
+					<div>
+						<h3>Apple Watch Hermès</h3>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="gun">
+		<h1 class="gunh">
+			건강앱
+		</h1>
+		<h2 class="gun2">
+			몸에 좋은 업데이트 소식이 한가득.
+		</h2>
+		<img class="gunimg" src="./img/건강.jpg">
+	</div>
 </body>
 </html>
