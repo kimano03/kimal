@@ -1,40 +1,77 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APPLE PRODUCT</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-nav{
-    z-index: 1000;
-}
-.navbar{
-    width: 100%;
-    justify-content: end;
-    align-items: center;
-    background-color: #323232;
-    position: absolute;
-}
-.navbar_menu{
-    font-size: 18px;
-    color: white;
-    display: flex;
-    list-style: none;
-}
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Noto+Sans+SC:wght@500&display=swap');
+        * {
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
 
-.navbar_menu li {
-    padding: 8px 12px;
-}
+		a {
+	  	  text-decoration: none;
+	 	   color: white;
+		}
+		nav{
+		    z-index: 1000;
+		}
+		.navbar{
+		    width: 100%;
+		    justify-content: end;
+		    align-items: center;
+		    background-color: #323232;
+		    position: absolute;
+		}
+		.navbar_menu{
+		    font-size: 18px;
+		    color: white;
+		    display: flex;
+		    list-style: none;
+		}
+
+		.navbar_menu li {
+    		padding: 8px 12px;
+		}
+
+		.navnull{
+			height: 45px;
+		}
+
+        .mcon{
+            position: relative;
+            border: solid black 1px;
+	        background-color: white;
+            width: 90vw;
+            height: 300vh;
+            border-radius: 8px;
+            padding: 10px;
+            margin: auto;
+            margin-top: 5vh;
+        }
+        .con{
+            border: solid black 1px;
+            background-color: #EEEEEE;
+            width: 40vw;
+            height: 80vh;
+            float: left;
+            text-align: center;
+            margin-top: 3vh;
+            margin-left: 3vw;
+        }
+        .mh{
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: 50px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -48,5 +85,19 @@ nav{
             <li><a href="./AirPods.html" style="margin-left: 10vw;">AirPods</a></li>
         </ul>
     </nav>
+	<div class="navnull"></div>
+    <div class="mcon">
+        <div class="">
+            <h1 class="mh">
+                Mac을 더욱 Mac답게 만드는 모든 것.
+            </h1>
+        </div>
+        <div class="con">
+            
+        </div>
+        <div class="con">
+
+        </div>
+    </div>
 </body>
 </html>
