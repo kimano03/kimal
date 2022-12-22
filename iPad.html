@@ -51,6 +51,7 @@ nav{
     -webkit-background-clip: text;
 }
 .gra2{
+    width: 30vw;
     font-size: 45px;
     background: linear-gradient(to right top, #861657, #ffa69e);
     color: transparent;
@@ -75,7 +76,7 @@ nav{
     font-size: 70px;
     position:absolute;
     left:28vw;
-    top:45vh;
+    top:30vh;
 }
 h1{
     color: #323232;
@@ -102,7 +103,7 @@ h1{
     font-size: 60px;
     position:absolute;
     left:10vw;
-    top:249vh;
+    top:210vh;
 }
 .t3{
     text-align: center;
@@ -110,7 +111,7 @@ h1{
     font-size: 45px;
     position:absolute;
     left:10vw;
-    top:259vh;
+    top:220vh;
 }
 .pp1{
     margin-left: 20vw;
@@ -140,7 +141,7 @@ h1{
     </div>
     <div class="i2">
         <img width="700px" height="800px" src="./images/아이패드.jpg" class="pad i2">
-        <div class="i2" style="width:450px; height:150px; float:left; margin-top:44vh;">
+        <div class="i2" style="width:450px; height:150px; float:left; margin-top:34vh;">
             <h1 class="gra">iPad</h1>
             <h2 class="gra2">쓰다. 그리다. 빠져들다.</h2>
             <div class="gradcircle"></div>
@@ -149,7 +150,7 @@ h1{
     <div class="i3">
         <h1 class="t2">iPad Pro</h1>
         <h2 class="t3">막강한 성능의 m2 탑재</h2>
-        <img class="f" width = "1000px" height="800px" src="images/아이패드 프로.jpg" >
+        <img class="f" width = "1000px" height="800px" src="images/아이패드 프로.jpg">
     </div>
     <script>
         let observer = new IntersectionObserver((e)=>{
@@ -162,7 +163,9 @@ h1{
             })
         })
         let div = document.querySelectorAll('div')
+        observer.observe(div[0])
         observer.observe(div[1])
+        observer.observe(div[2])
         observer.observe(div[3])
         observer.observe(div[4])
     </script>
