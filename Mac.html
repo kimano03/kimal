@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Noto+Sans+SC:wght@500&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Noto+Sans+SC:wght@500&display=swap');
         * {
 			margin:0;
 			padding:0;
@@ -45,18 +45,18 @@
 
         .mcon{
             position: relative;
-            border: solid black 1px;
+            /* border: solid black 1px; */
 	        background-color: white;
             width: 90vw;
-            height: 300vh;
+            height: 200vh;
             border-radius: 8px;
             padding: 10px;
             margin: auto;
             margin-top: 5vh;
         }
         .con{
-            border: solid black 1px;
-            background-color: #EEEEEE;
+            /* border: solid black 1px; */
+            background-color: #FBFBFB;
             width: 40vw;
             height: 80vh;
             float: left;
@@ -64,6 +64,15 @@
             margin-top: 3vh;
             margin-left: 3vw;
         }
+        .fcon{
+            position: relative;
+            /* border: solid black 1px; */
+            background-color: #F2F2F2;
+            width: 85vw;
+            margin-top: 95vh;
+            height: 95vh;
+            margin-left: 35px;
+        }       
         .mh{
             margin-top: 40px;
             margin-bottom: 30px;
@@ -72,6 +81,30 @@
             font-size: 50px;
             text-align: center;
         }
+        
+        .cimg{
+            position: absolute; top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        h3{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-family: 'Noto Sans SC', sans-serif;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 25px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        h2{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
     </style>
 </head>
 <body>
@@ -93,10 +126,34 @@
             </h1>
         </div>
         <div class="con">
-            
+            <h3>
+                Mac을 선택하는 이유
+            </h3>
+            <h2>
+                초강력해서.<br>
+                초간단해서.
+            </h2>
+            <img height: 38.1vh; src="./img/왼쪽.jpg">
         </div>
         <div class="con">
-
+            <h3>
+                연속성
+            </h3>
+            <h2>
+                당신의 모든 기기가<br>
+                하나처럼 연결된 경험.
+            </h2>
+            <img height: 38.1vh; src="./img/오른쪽.jpg">
+        </div>
+        <div class="fcon">
+            <h3>
+                <br>액세서리
+            </h3>
+            <h2>
+                Mac 액세서리<br>
+                살펴보기.
+            </h2>
+            <img width="100%" height="570px" src="./img/통합.jpg">
         </div>
     </div>
 </body>
